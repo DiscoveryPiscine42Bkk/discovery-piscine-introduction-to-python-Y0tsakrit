@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
-num = int(input())
+import sys
+
+
+num = int(sys.argv[1])
 
 if num > 0:
     print("This number is positive.")

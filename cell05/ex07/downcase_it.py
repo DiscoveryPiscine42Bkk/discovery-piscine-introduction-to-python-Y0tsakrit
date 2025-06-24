@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-x = input().split()
+import sys
 
-if len(x) == 0:
+if len(sys.argv) == 0:
     print("none")
 
 else:
-    for i in x:
+    for i in sys.argv:
         print(i.lower(), end=' ')
     

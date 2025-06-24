@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
+import sys
 
-x = input().split()
-a = []
-if len(x) == 0:
+if len(sys.argv) != 3:  
     print("none")
 else:
-    for i in range(int(x[0]), int(x[1]) + 1):
-        a.append(i)
-    print(a)
+    try:
+        start = int(sys.argv[1])  
+        end = int(sys.argv[2])    
+        result = []
+        for i in range(start, end + 1):
+            result.append(i)
+        print(result)
+    except ValueError:
+        print("none")

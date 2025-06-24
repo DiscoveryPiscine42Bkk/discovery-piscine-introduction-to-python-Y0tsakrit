@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
-text = input()
+import sys
 
-for i in text:
+
+for i in sys.argv[1:]:
     if i.isupper():
         print(i.lower(), end="")
     elif i.islower():

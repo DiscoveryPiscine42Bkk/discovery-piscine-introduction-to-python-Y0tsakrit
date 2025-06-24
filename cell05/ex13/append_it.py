@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
+import sys
 
-x = input().split()
-
-if len(x) == 0:
+if len(sys.argv) < 2:
     print("none")
 else:
-    for i in x:
-        if i[-3] == "i" and i[-2] == "s" and i[-1] == "m":
+    for i in sys.argv[1:]:
+        if len(i) >= 3 and i[-3:] == "ism":
             pass
         else:
             print(f"{i}ism")

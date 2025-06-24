@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-x = input().split()
+import sys
+
+x = sys.argv[1:]
 
 if len(x) < 2:
     print("none")

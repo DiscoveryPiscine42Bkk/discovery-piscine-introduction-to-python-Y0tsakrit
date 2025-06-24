@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
 
-x = input().split()
+import sys
 
-print(f"Number of parameters: {len(x)}")
+print(f"Number of parameters: {len(sys.argv) - 1}")
