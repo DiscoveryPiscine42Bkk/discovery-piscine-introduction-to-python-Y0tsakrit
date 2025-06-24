@@ -3,10 +3,10 @@
 import sys
 
 password = "nongsakrit"
+user = input("")
 
 
-
-if sys.argv == password:
+if user == password:
     print("ACCESS GRANTED")
 else:
     print("ACCESS DENIED")
