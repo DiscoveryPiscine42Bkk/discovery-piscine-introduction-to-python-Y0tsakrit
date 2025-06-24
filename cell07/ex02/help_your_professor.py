@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def average(class_scores):
     total = sum(class_scores.values())
     count = len(class_scores)

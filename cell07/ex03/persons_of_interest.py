@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def famous_births(birthdays):
     for key, value in birthdays.items():
         print(f"{value['name']} is a great scientist born in {value['date_of_birth']}.")

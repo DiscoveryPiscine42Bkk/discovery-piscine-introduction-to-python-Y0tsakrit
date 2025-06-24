@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 x = input("What you gotta say? : ")
 
 if x != "STOP":

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 x = 0
 y = 0
 index = 11

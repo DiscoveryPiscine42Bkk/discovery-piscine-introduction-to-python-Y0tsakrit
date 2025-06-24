@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def find_the_redheads(family):
     redheads = []
     for name, hair_color in family.items():

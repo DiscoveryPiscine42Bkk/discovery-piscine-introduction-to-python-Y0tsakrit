@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 x = input().split()
 count = 0
 if len(x) < 2:

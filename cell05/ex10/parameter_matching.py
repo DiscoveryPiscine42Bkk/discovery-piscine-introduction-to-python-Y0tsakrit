@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 x = input()
 
 if len(x) == 0:

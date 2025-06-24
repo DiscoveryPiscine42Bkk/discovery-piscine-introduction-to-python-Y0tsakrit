@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 text = input()
 
 for i in text:

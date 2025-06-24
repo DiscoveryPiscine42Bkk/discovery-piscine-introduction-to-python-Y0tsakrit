@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 x = input()
 check = False
 for i in x:
