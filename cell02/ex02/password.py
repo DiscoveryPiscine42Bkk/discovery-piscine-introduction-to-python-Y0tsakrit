@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 password = "nongsakrit"
 
 user = input("")
