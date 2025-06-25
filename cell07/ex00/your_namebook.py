@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def array_of_names(persons):
     names = []
     for first_name, last_name in persons.items():
