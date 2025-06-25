@@ -42,25 +42,25 @@ def moveThePiece(board):
     for i in range(len(board)):
         for j in range(len(board[i])):
             if board[i][j] == "P":
-                if not pawnMove(board,i,j):
-                    return False
+                if pawnMove(board,i,j):
+                    return True
             elif board[i][j] == "B":
-                if not bishopMove(board,i,j):
-                    return False
+                if bishopMove(board,i,j):
+                    return True
             elif board[i][j] == "R":
-                if not rookMove(board,i,j):
-                    return False
-    return True
+                if rookMove(board,i,j):
+                    return True
+            elif board[i][j] == "Q":
+                if queenMove(board,i,j):
+                    return True
+    return False
 
 def pawnMove(board,x,y):
-    for i in range(len(board)):
-        for j in range(len(board[i])):
-            if board[i][j] == "P":
-                if i-1 >= 0:
-                    if j-1 >= 0 and board[i-1][j-1] == "K":
-                        return True
-                    if j+1 < len(board[i]) and board[i-1][j+1] == "K":
-                        return True
+    if x-1 >= 0 :
+        if y-1 >= 0 and board[x-1][y-1] == "K":
+            return True
+        if y+1 < len(board[x]) and board[x-1][y+1] == "K":
+            return True
     return False
 
 def bishopMove(board, x, y):
