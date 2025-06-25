@@ -1,5 +1,5 @@
 def checkmate(board):
-    boardlist = validateboard(board.split(" "))
+    boardlist = validateboard(board.splitlines())
     
     valdatesqare(boardlist)
     if not valdatesqare(boardlist):
@@ -25,9 +25,9 @@ def validateboard(board):
     for i in listboard:
         freetext = ""
         for j in i:
-            if j != "\n":
+            if j != "\n" or j != " " or j != "":
                 freetext += j
-        newboard.append(freetext)
+        newboard.append(freetext.strip())
     return newboard
 
 def valdatesqare(board):
