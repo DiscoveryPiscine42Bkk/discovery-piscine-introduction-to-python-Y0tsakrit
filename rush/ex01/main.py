@@ -5,15 +5,6 @@ from checkmate import checkmate
 
 def main():
 
-    board =  """\
-    .R..
-    ..K.
-    ....
-    ....\
-    """
-    checkmate(board)
-
-
     if len(sys.argv) > 1:
         for arg in sys.argv[1:]:
             try:
