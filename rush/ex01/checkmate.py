@@ -91,6 +91,7 @@ def rookMove(board,x,y):
     return False
 
 def queenMove(board,x,y):
-    if not rookMove(board,x,y) or not bishopMove(board,x,y):
-        return False
+    if not rookMove(board,x,y):
+        if not bishopMove(board,x,y):
+            return False
     return True 
