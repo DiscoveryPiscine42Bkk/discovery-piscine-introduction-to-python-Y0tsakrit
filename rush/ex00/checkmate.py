@@ -15,19 +15,14 @@ def checkmate(board):
 
 
 def validateboard(board):
-    listboard = []
     newboard = []
     for i in board:
-        if len(i) == 0:
-            pass
-        else:
-            listboard.append(i)
-    for i in listboard:
         freetext = ""
         for j in i:
             if j != "\n" or j != " " or j != "":
                 freetext += j
-        newboard.append(freetext.strip())
+        newboard.append(freetext)
+    print(newboard)
     return newboard
 
 def valdatesqare(board):
@@ -97,8 +92,6 @@ def rookMove(board,x,y):
     return False
 
 def queenMove(board,x,y):
-    if not rookMove(board,x,y):
-        return False
-    if not bishopMove(board,x,y):
+    if not rookMove(board,x,y) or not bishopMove(board,x,y):
         return False
     return True 
