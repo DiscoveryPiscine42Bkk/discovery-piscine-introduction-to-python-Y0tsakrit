@@ -22,7 +22,6 @@ def validateboard(board):
             if j != "\n" or j != " " or j != "":
                 freetext += j
         newboard.append(freetext)
-    print(newboard)
     return newboard
 
 def valdatesqare(board):
